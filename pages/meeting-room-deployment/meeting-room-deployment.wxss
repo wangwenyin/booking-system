@@ -1,0 +1,158 @@
+/* pages/meeting-room-deployment/meeting-room-deployment.wxss */
+.arrangement {
+    padding-top: 60rpx;
+    background:linear-gradient(90deg,rgba(114,135,241,1),rgba(133,81,192,1));
+}
+
+.arrangement .title {
+    padding: 24rpx;
+    display: flex;
+    justify-content: space-between;
+    border-radius:50rpx 50rpx 0 0;
+    background-color: #fff;
+}
+
+.title {
+    font-size:30rpx;
+    font-weight:500;
+    color:rgba(63,64,69,1);
+}
+
+.title text:last-child {
+    font-size:22rpx;
+    color:rgba(153,153,153,1);
+}
+
+.arrangement textarea {
+    width: 100%;
+    height: 160rpx;
+    padding: 10rpx 24rpx;
+    background-color: #fff;
+    color: #999;
+    font-size: 30rpx;
+}
+
+.num-of-people {
+    background-color: #fff;
+    margin: 22rpx 0;
+    padding: 24rpx;
+    padding-bottom: 0;
+}
+
+.title text:first-child {
+    margin-right: 12rpx;
+}
+
+.counter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140rpx;
+}
+
+.counter {
+    display: flex;
+}
+
+.counter input {
+    width: 128rpx;
+    height: 100%;
+    border-bottom: 1rpx solid #D8DCEB;
+    margin: 0 20rpx;
+    text-align: center;
+    font-size:48rpx;
+    font-weight:700;
+    color:rgba(63,64,69,1);
+}
+
+.circle {
+    width:60rpx;
+    height:60rpx;
+    background:rgba(101,137,252,1);
+    border-radius:50%;
+    position: relative;
+}
+
+.decrease::before, .add::before, .add::after {
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.decrease::before, .add::before {
+    width: 16rpx;
+    height: 0;
+    border-top: 2rpx solid #fff;
+}
+
+.add::after {
+    width: 0;
+    height: 16rpx;
+    border-right: 2rpx solid #fff;
+}
+
+.notifier-box {
+    background-color: #fff;
+    padding: 24rpx;
+    padding-bottom: 0;
+}
+
+.notifier-list {
+    padding-top: 40rpx;
+}
+.notifier-list .notifier-item:last-child {
+    border-bottom: 1rpx solid #D8DCEB;
+}
+
+.notifier-item {
+    display: flex;
+    justify-content: space-between;
+    height: 70rpx;
+    padding: 0 14rpx;
+    color: #666;
+}
+
+.notifier-item .del {
+    opacity: .35;
+}
+
+.notifier text {
+    display: inline-block;
+}
+
+.notifier text:first-child {
+    width: 124rpx;
+}
+
+.add-notifier-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 76rpx;
+    color: #6589FC;
+}
+
+.add-notifier {
+    padding-left: 36rpx;
+    position: relative;
+}
+
+.add-notifier::after {
+    top: -12rpx;
+    content: '+';
+    font-size: 40rpx;
+    color: #6589FC;
+}
+
+.save {
+    width: 90%;
+    height:84rpx;
+    line-height: 84rpx;
+    text-align: center;
+    color: #FEFEFF;
+    font-size: 32rpx;
+    margin: 40rpx auto 0;
+    background:linear-gradient(90deg,rgba(114,135,241,1),rgba(133,81,192,1));
+    border-radius:42px;
+}
+

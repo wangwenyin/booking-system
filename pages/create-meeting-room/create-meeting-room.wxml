@@ -1,0 +1,22 @@
+<!--pages/create-meeting-room/create-meeting-room.wxml-->
+<navigation title="新增会议室"></navigation>
+<image class="header-bg" src="../../images/search-prj-header.png"></image>
+<view class="create-box clearfix">
+    <view class="upload-box">
+        <image src="../../images/upload.png"></image>
+        上传会议室图片
+    </view>
+    <view class="empty" style="height: 300rpx;"></view>
+    <input type="text" placeholder="请输入会议室名称"></input>
+    <view class="input-num-box">
+        <view class="label">会议室可容纳人数</view>
+        <view class="counter-box">
+            <view class="counter">
+                <view class="decrease circle common-before" bindtap="decreaseNum"></view>
+                <input type="number" value="{{peopleNum}}" placeholder-class="input-placeholder" /> 
+                <view class="add circle common-before common-after" bindtap="addNum"></view>
+            </view>
+        </view>
+    </view>
+    <view class="common-confirm-btn">创建会议室</view>
+</view>

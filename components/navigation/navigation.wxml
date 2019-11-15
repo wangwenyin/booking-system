@@ -1,0 +1,10 @@
+<view style="padding-top:{{content_offset ? bar_Height + 44 : 0}}px;">
+  <view class='navigation status-bar' style="height: {{phone_model === 'iPhone 5' ? '64px' : 'auto'}}">
+    <view class='goBack' style="padding-top:{{bar_Height}}px;" bindtap='goBack'  hidden='{{isShowBack}}'>      <!-- 返回按钮 -->
+      <image src='../../images/go-back.png'></image>
+    </view>
+    <view class="tabar" style="padding-top:{{bar_Height}}px;">
+      <text style="color:{{title_color}};">{{title}}</text>   <!-- 标题 -->
+    </view>
+  </view>
+</view>

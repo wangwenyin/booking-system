@@ -1,0 +1,13 @@
+<!--pages/change-phone-num2/change-phone-num2.wxml-->
+<navigation title="更改绑定手机号"></navigation>
+<image class="header-bg" src="../../images/header-bg.png"></image>
+<form>
+    <view class="title">请输入新手机号并验证</view>
+    <input name="phoneNum" type="number" bindinput="checkPhoneNum" maxlength="11" placeholder="请输入手机号码"></input>
+    <view class="verify-code">
+        <input name="verifyCode" type="number" bindinput="checkVerifyCode" maxlength="6" placeholder="请输入验证码"></input>
+        <button class="send-verify-code" disabled='{{disabled}}' bindtap="getVerifyCode">{{text}}</button>
+    </view>
+    <view class="error-tip" wx:if="{{showTip}}">{{tipContent}}</view>
+    <button class="complete" bindtap="submit">完成</button>
+</form> 

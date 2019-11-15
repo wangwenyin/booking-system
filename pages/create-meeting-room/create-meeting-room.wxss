@@ -1,0 +1,108 @@
+/* pages/create-meeting-room/create-meeting-room.wxss */
+.header-bg {
+    width: 100%;
+    height: 240rpx;
+}
+
+.create-box {
+    position: relative;
+}
+
+.create-box .upload-box {
+    position: absolute;
+    left: 50%;
+    transform: translate3d(-50%, -45%, 0);
+    width: 320rpx;
+	height: 320rpx;
+    text-align: center;
+    font-size: 30rpx;
+    color: #C6C8D4;
+    background: #fff;
+	border-radius: 8rpx;
+}
+
+.upload-box image {
+    width: 92rpx;
+    height: 92rpx;
+    margin: 85rpx auto 30rpx;
+}
+
+.create-box input {
+    width: 80%;
+    height: 80rpx;
+    margin: 0 auto;
+    font-size: 30rpx;
+    border-bottom: 1px solid #ddd;
+}
+
+.input-placeholder {
+    font-size: 30rpx;
+    color: #999;
+}
+
+.input-num-box {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50rpx;
+} 
+
+.input-num-box .label {
+    font-size: 30rpx;
+    margin-right: 56rpx;
+}
+
+.counter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    display: flex;
+}
+
+.counter input {
+    width: 128rpx;
+    height: 66rpx;
+    border-bottom: 1rpx solid #D8DCEB;
+    margin: 0 20rpx;
+    padding-bottom: 20rpx;
+    text-align: center;
+    font-size:48rpx;
+    font-weight:700;
+    color:rgba(63,64,69,1);
+}
+
+.circle {
+    width:60rpx;
+    height:60rpx;
+    background:rgba(101,137,252,1);
+    border-radius:50%;
+    position: relative;
+}
+
+.decrease::before, .add::before, .add::after {
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.decrease::before, .add::before {
+    width: 16rpx;
+    height: 0;
+    border-top: 2rpx solid #fff;
+}
+
+.add::after {
+    width: 0;
+    height: 16rpx;
+    border-right: 2rpx solid #fff;
+}
+
+.common-confirm-btn {
+    margin-top: 330rpx;
+}
+
+

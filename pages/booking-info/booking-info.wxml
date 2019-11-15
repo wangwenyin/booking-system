@@ -1,0 +1,53 @@
+<!--pages/booking-info/booking-info.wxml-->
+<navigation title="{{pageTitle}}"></navigation>
+<view class="booking-info-box">
+    <view class="my-calendar">
+        <calendar
+            id="calendar"
+            calendarConfig="{{calendarConfig}}"
+            bind:onTapDay="onTapDay"
+            bind:afterTapDay="afterTapDay"
+            bind:onSwipe="onSwipe"
+            bind:whenChangeWeek="whenChangeWeek"
+            bind:whenChangeMonth="whenChangeMonth"
+            bind:afterCalendarRender="afterCalendarRender"
+        ></calendar>
+    </view>
+    <view class="booking-info">
+        <view class="indicates">
+            <view class="indicate-item">
+                <text></text>
+                <text>我的预定</text>
+            </view>
+            <view class="indicate-item">
+                <text></text>
+                <text>可预订</text>
+            </view>
+            <view class="indicate-item">
+                <text></text>
+                <text>不可占用</text>
+            </view>
+            <view class="indicate-item">
+                <text></text>
+                <text>已进行会议</text>
+            </view>
+            <view class="indicate-item">
+                <text></text>
+                <text>未进行会议</text>
+            </view>
+        </view>
+        <view class="time-blocks">
+            <view class="block" wx:for='{{timeList}}' wx:key='{{index}}'>
+                <view class="disabled" style="width: {{item.disabledTime}}%"></view>
+                <view class="free" style="width: {{item.freeTime}}%"></view>
+                <view class="no-meeting" style="width: {{item.noMTime}}%"></view>
+                <view class="held-meeting" style="width: {{item.heldMTime}}%"></view>
+                <view class="time">{{item.time}}</view>
+            </view>
+        </view>
+        <view class="free-time">
+            <text decode="{{true}}">今日剩余空闲&ensp;{{freeTime}}</text>
+        </view>
+        <view class="to-booking-btn" bindtap="toBooking">预定会议室</view>
+    </view>
+</view>

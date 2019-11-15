@@ -1,0 +1,37 @@
+<!--pages/meeting-room-deployment/meeting-room-deployment.wxml-->
+<navigation title="会议室部署"></navigation>
+<view class="meeting-room-deployment">
+    <view class="arrangement">
+        <view class="title">
+            <text>会议安排</text><text>0/200</text>
+        </view>
+        <textarea show-confirm-bar='false' />
+    </view>
+    <view class="num-of-people">
+        <view class="title">
+            <text>会议人数</text><text>本会议建议人数30人以内</text>
+        </view>
+        <view class="counter-box">
+            <view class="counter">
+                <view class="decrease circle common-before" bindtap="decreaseNum"></view>
+                <input type="number" value="{{peopleNum}}" placeholder-class="input-placeholder" /> 
+                <view class="add circle common-before common-after" bindtap="addNum"></view>
+            </view>
+        </view>
+    </view> 
+    <view class="notifier-box">
+        <view class="title">
+            <text>通知人</text><text>系统将会发送会议通知短信至以下手机号</text>
+        </view>
+        <view class="notifier-list">
+            <view class="notifier-item" wx:for="{{notifierList}}" wx:key="{{index}}">
+                <view class="notifier"><text>{{item.name}}</text><text>{{item.phoneNum}}</text></view>
+                <view class="del">x</view>
+            </view>
+        </view>
+        <view class="add-notifier-box">
+            <view class="add-notifier common-after">添加通知人</view>
+        </view>
+    </view>
+    <view class="save" bindtap="toSelectTime">保存部署，去选择时间段</view>
+</view>

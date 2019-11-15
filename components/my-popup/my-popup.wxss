@@ -1,0 +1,37 @@
+.main {
+    text-align: center;
+    background: #fff;
+}
+
+.popup-top {
+    width: 590rpx;
+    /* height: 406rpx; */
+}
+
+.title {
+    font-size: 32rpx;
+    font-weight: 500;
+    color: #3F4045;
+}
+
+.confirm-btn {
+    width: 70%;
+    margin: 0 auto;
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    font-size: 32rpx;
+    color: #fff;
+    border-radius:45rpx;
+    letter-spacing: 1px;
+}
+
+.cancle-btn {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 65rpx;
+    text-align: center;
+    font-size: 32rpx;
+    letter-spacing: 1px;
+}
+

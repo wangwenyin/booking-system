@@ -1,0 +1,11 @@
+<van-popup show="{{ isShow }}" bind:click-overlay="cancle">
+    <view class="box">
+        <image class="popup-top" style="width: {{imgInfo.width}}rpx; height: {{imgInfo.height}}rpx" src="../../images/{{imgInfo.src}}.png"></image>
+        <view class="main">
+            <view class="title" style="margin-top: {{titleInfo.top}}rpx; margin-bottom: {{titleInfo.bottom}}rpx">{{titleInfo.text}}</view>
+            <view class="sub-title">{{sub_title}}</view>
+            <view class="confirm-btn" style="margin-top: {{btnInfo.top}}rpx; margin-bottom: {{btnInfo.bottom}}rpx;background: {{btnInfo.bgc}}" bindtap="confirm">{{btnInfo.text}}</view>
+            <view wx:if="{{isShowCancle}}" class="cancle-btn" bindtap="cancle">取消</view>
+        </view>
+    </view>
+</van-popup>

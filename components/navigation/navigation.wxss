@@ -1,0 +1,34 @@
+.navigation.status-bar {
+  width: 100%;
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  background: linear-gradient(90deg,rgba(92,113,222,.92),rgba(123,79,173,.92));
+}
+
+.navigation.status-bar .goBack{
+  position: absolute;
+  top: 15rpx;
+  left: 10rpx;
+}
+
+.navigation.status-bar .goBack image{
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.navigation.status-bar .tabar {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation.status-bar .tabar text {
+  height: 88rpx;
+  line-height: 88rpx;
+  color: #fff;
+  font-size: 38rpx;
+}
+
+.navigation.status-bar .tabar .active {
+  color: #fff;
+}

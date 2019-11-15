@@ -1,0 +1,74 @@
+/* pages/change-phone-num2/change-phone-num2.wxss */
+/* pages/registered/registered.wxss */
+page {
+    background: #fff;
+}
+
+.header-bg {
+    width: 100%;
+    height: 156rpx;
+}
+
+form {
+    width: 80%;
+    height: calc(100vh - 156rpx);
+    margin: 0 auto;
+}
+
+.title {
+    margin: 50rpx 0 25rpx 0;
+    text-align: center;
+    font-size: 32rpx; 
+}
+
+form input { 
+    height: 136rpx;
+    padding: 20rpx;
+    padding-top: 66rpx;
+    font-size: 30rpx;
+    border-bottom: 1px solid #ddd;
+}
+
+.input-placeholder {
+    font-size: 30rpx;
+    color: #999;
+}
+
+.verify-code {
+    display: flex;
+}
+
+.verify-code input {
+    flex: 3;
+    margin-right: 20rpx;
+}
+
+.verify-code .send-verify-code {
+    flex: 2.1;
+	height: 84rpx;
+    margin-top: 52rpx;
+    padding-left: 60rpx;
+	background-color: #6589fc;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAYAAACD1LrRAAADDklEQVRYhb2XWWhVVxSGv3sdgi04UbVqFY1DIYIUzXuptEhB8aEOQSzYB3FAaaO+++CTD41SKKSlFCnxSVBKqYIUpCLiEKV1KLQUJDgkGmvFEifUz4e9r9m5yb33nHrND5uzztr/Wv/ZA2vvg0rOtkA9aj+ORl+uPHnIM9Q2tdfBuBP7ZtRLeIy6WP0qJi/hqrottr8T/z+R26yOyyP8hjpPfV/dpP5cNrJutV2dnMSMV/fFvhQn1J3qR+pcdUKqVVB3AU3AY2AmMBeYzkD8AfwIdER7KDQBq4DV0U5xHegGbgAPga6CaoVEfwGHgdPAWeBmBV45pgHNwBJgBTBrKFJBfQCMAX4BfgJ6CaO6BfRkFKv2EZMIMzAJWA58CPShPoprsibrjnyFtiZqPSomX1dpyuuJlxqpcHEIYr1RHGQMN16H8FigMNzC24Eu4PNaxJF1FN0CfBnt8gIyCPUa8Ubg62hfBHYPh/AGoD3aF4BlwLV6CK8FLgE7hujbDHwb7U7gkyyiAGnlaqlQbb5JTpzNiX+r+jz6f1fnZKhcLaXKlUV4jno2cv5VP1DXJaJ/Go7SXCUT9Ul8WVklYKp6phSUiF5RZ2cUTUf8pEg4HwHeqrIi3cDHwAmggVAgLgBLgauZ1jTgnfjsKwLn4ktzjaC7hM1zBviNcNZezyEKsCg+z6O2xuH3qI0ZpqvBcBfLeyQ2Rg3VVtQm9Wl07PkfCbO2PVHjP7URdYThAqf6QF30GkQXx9yqu7X/ljld7Yodnda4muZso9VzMXeXOi0VRl1vP36oo/D3Sd71JX85qS0hfacWXkGwEHOU0Jb2l5NHqQcS8n7DJT+v6NgYW8KBmLuicGmzdSRBx9WFOUQXqieT+I6YcwCv2jS1J8G31e3qyCqCb6q7IreEvVZYrlpfv0m9lyTqNGyQiYbd2qBOUb9QLye8W+pn1XJnmbr31MMOxF31V/WU2pf4n6sH1fm18ubZMC3qEUPlKcd99ZDVT7gBraCZfyBGAe8CnxJOpbcJfwY9wDFgP+FH71mWZC8ARGDg/A35DMsAAAAASUVORK5CYII=);
+    background-repeat: no-repeat;
+    background-position: 34rpx 25rpx;
+    background-size: 30rpx 35rpx;
+	border-radius: 6rpx;
+    line-height: 84rpx;
+    text-align: center;
+    font-size: 30rpx;
+    color: #FEFEFF;
+}
+
+form .complete {
+    height:84rpx;
+    line-height: 84rpx;
+    text-align: center;
+    margin:  265rpx auto 0;
+    font-size: 34rpx;
+    color: #FEFEFF;
+    background:rgba(101,137,252,1);
+    border-radius:8rpx;
+    letter-spacing: 10rpx;
+}
+

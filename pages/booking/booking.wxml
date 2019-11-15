@@ -1,0 +1,41 @@
+<!--pages/booking/booking.wxml-->
+<navigation title="预定"></navigation>
+<view class="booking">
+    <view class="tabs-box">
+        <view class="tab-header">
+            <view class="tab-header-inner">
+                <view class="tab {{isShowMeeting ? 'active' : ''}}" data-flag="1" bindtap="toggleShow">会议预定</view>
+                <view class="tab {{!isShowMeeting ? 'active' : ''}}" data-flag="0" bindtap="toggleShow">展厅预定</view>
+            </view>
+        </view>
+        <view wx:if="{{isShowMeeting}}" class="tab-content meeting-booking">
+            <view class="notify">
+                <image class="mailbox" src="../../images/mailbox.png"></image>
+                <text>您预定的会议即将开始，请准备入场。</text>
+                <image class="refresh" src="../../images/refresh.png"></image>
+            </view>
+            <view class="cards-box">
+                <view class="card" wx:for="{{roomList}}" wx:key="{{index}}">
+                    <view class="card-left">
+                        <image class="room-image" src="../../images/meeting-room{{index + 1}}.png"></image>
+                        <view class="room-info">
+                            <view class="name {{item.isFree ? 'free' : 'meeting'}}">{{item.name}}<text class="tag">{{item.isFree ? '空闲' : '会议中'}}</text></view>
+                            <text class="num">可容纳{{item.num}}人</text>
+                            <text class="free-time"><text class="text">今日剩余空闲</text><text>{{item.hours}}</text>:<text>{{item.minutes}}</text>:<text>{{item.seconds}}</text></text>
+                        </view>
+                    </view>
+                    <view class="access" data-name="{{item.name}}" bindtap="selectMeetingRoom">进入会议室<image src="../../images/arrow-right.png"></image></view>
+                </view>
+            </view>
+        </view>
+        <view wx:else class="tab-content hall-booking">
+            <view class="notify">
+                <image class="mailbox" src="../../images/mailbox.png"></image>
+                <text>您预定的会议即将开始，请准备入场。</text>
+                <image class="refresh" src="../../images/refresh.png"></image>
+            </view>
+            <view class="cards-box">
+            </view>
+        </view>
+    </view>
+</view>
