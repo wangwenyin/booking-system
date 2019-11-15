@@ -1,0 +1,57 @@
+{
+    "pages": [
+        "pages/login/login",
+        "pages/start-page/start-page",
+        "pages/search-project/search-project",
+        "pages/my-project/my-project",
+        "pages/register/register",
+        "pages/registered/registered",
+        "pages/pending-review/pending-review",
+        "pages/booking/booking",
+        "pages/user-center/user-center",
+        "pages/booking-info/booking-info",
+        "pages/meeting-room-deployment/meeting-room-deployment",
+        "pages/selected-time/selected-time",
+        "pages/select-meeting-session/select-meeting-session",
+        "pages/meeting-room-manage/meeting-room-manage",
+        "pages/create-meeting-room/create-meeting-room",
+        "pages/meeting-room-detail/meeting-room-detail",
+        "pages/user-manage/user-manage",
+        "pages/change-phone-num1/change-phone-num1",
+        "pages/change-phone-num2/change-phone-num2",
+        "pages/prj-manage/prj-manage",
+        "pages/person-manage/person-manage"
+    ],
+    "window": {
+        "navigationBarTitleText": "预订系统",
+        "navigationBarBackgroundColor": "#5C71DE",
+        "navigationBarTextStyle": "white",
+        "backgroundTextStyle": "light",
+        "navigationStyle": "custom"
+    },
+    "tabBar": {
+        "custom": true,
+        "list": [
+            {
+                "pagePath": "pages/booking/booking",
+                "text": "预定",
+                "iconPath": "images/index.png",
+                "selectedIconPath": "images/index-selected.png"
+            },
+            {
+                "pagePath": "pages/user-center/user-center",
+                "text": "个人中心",
+                "iconPath": "images/user.png",
+                "selectedIconPath": "images/user-selected.png"
+            }
+        ],
+        "color": "#fff",
+        "selectedColor": "#fff",
+        "backgroundColor": "#5C71DE"
+    },
+    "usingComponents": {
+        "navigation": "/components/navigation/navigation",
+        "my-popup": "/components/my-popup/my-popup"
+    },
+    "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,202 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.3",
+	"appid": "wx4c441b666aa1910d",
+	"projectname": "booking-system",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 20,
+			"list": [
+				{
+					"id": 0,
+					"name": "booking-info",
+					"pathName": "pages/booking-info/booking-info",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/meeting-room-deployment/meeting-room-deployment",
+					"pathName": "pages/meeting-room-deployment/meeting-room-deployment",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/booking/booking",
+					"pathName": "pages/booking/booking",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/selected-time/selected-time",
+					"pathName": "pages/selected-time/selected-time",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "start-page",
+					"pathName": "pages/start-page/start-page",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "search-project",
+					"pathName": "pages/search-project/search-project",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "my-project",
+					"pathName": "pages/my-project/my-project",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "register",
+					"pathName": "pages/register/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "registered",
+					"pathName": "pages/registered/registered",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "meeting-room-manage",
+					"pathName": "pages/meeting-room-manage/meeting-room-manage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "user-center",
+					"pathName": "pages/user-center/user-center",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "create-meeting-room",
+					"pathName": "pages/create-meeting-room/create-meeting-room",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "meeting-room-detail",
+					"pathName": "pages/meeting-room-detail/meeting-room-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pending-review",
+					"pathName": "pages/pending-review/pending-review",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "select-meeting-session",
+					"pathName": "pages/select-meeting-session/select-meeting-session",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "user-manage",
+					"pathName": "pages/user-manage/user-manage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "change-phone-num1",
+					"pathName": "pages/change-phone-num1/change-phone-num1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "change-phone-num2",
+					"pathName": "pages/change-phone-num2/change-phone-num2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "prj-manage",
+					"pathName": "pages/prj-manage/prj-manage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "person-manage",
+					"pathName": "pages/person-manage/person-manage",
+					"scene": null
+				}
+			]
+		}
+	}
+}

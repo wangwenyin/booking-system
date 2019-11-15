@@ -1,0 +1,63 @@
+/**app.wxss**/
+page {
+    height: 100%;
+    background: #F8F8F8;
+    color: #666;
+    font-size: 28rpx;
+    font-family:Source Han Sans CN;
+}
+
+view, text, image, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+image {
+    display: block;
+}
+
+/* 防止form宽高塌陷（小程序里form默认行内元素） */
+form {
+  display: block;
+}
+
+input, textarea {
+    outline: none;
+}
+
+.clearfix::after {
+    display: block;
+    content: ''; 
+    clear: both;
+}
+
+.common-confirm-btn {
+    width:90%;
+    height:84rpx;
+    line-height: 84rpx;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 32rpx;
+    color: #FEFEFF;
+    background:linear-gradient(90deg,rgba(114,135,241,1),rgba(133,81,192,1));
+    border-radius:42rpx;
+}
+
+.common-before::before, .common-after::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    content: '';
+}
+
+.success-tip {
+    padding: 20rpx;
+    color: lightgreen;
+}
+
+.error-tip {
+  padding: 20rpx;
+  color: #e94f4f
+}
